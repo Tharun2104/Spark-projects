@@ -14,3 +14,6 @@ The project was developed using **PySpark** within the **Apache Spark** framewor
 2. **Obtain Text Data**: The Word Count and Page Rank algorithms require text input. Datasets from **Project Gutenberg** or any other publicly available sources can be used.
 3. **Execute the Scripts**: The provided Python scripts load and process the data, compute algorithm outputs, and generate result files. Additionally, Spark’s WebUI was utilized to analyze job execution and monitor computational stages.
 
+# Spark Streaming K-mer Counting Project  
+ 
+This project demonstrates the use of **Apache Spark Streaming** to process real-time data streams and count the occurrences of k-mers (subsequences of length `k`) in text data. The project implements a **k-mer counting program** using PySpark and Spark Streaming to process continuous input data streamed from a TCP socket. Specifically, the program processes a generated text file (`sentences.txt`) and streams data through the TCP port `9999` to count 3-mers (k-mers of length 3).
